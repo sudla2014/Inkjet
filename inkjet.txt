@@ -1,0 +1,29 @@
+;
+CREATE DATABASE champinkjet CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE TABLE if not EXISTS Status
+(St_Id int PRIMARY KEY  AUTO_INCREMENT,
+St_Name varchar(50));
+CREATE TABLE if not EXISTS Person
+(Per_Id int PRIMARY KEY  AUTO_INCREMENT,
+Per_Fname varchar(50),
+Per_Lname varchar(50),
+Per_Address text(300),
+Per_Phone varchar(15),
+Per_Email varchar(75),
+Per_Line varchar(30),
+Per_User varchar(20),
+Per_Pass varchar(20),
+Per_ConfrimPass	varchar(20),
+Per_Status int);
+CREATE TABLE if not EXISTS Product
+(Pr_Id int PRIMARY KEY  AUTO_INCREMENT,
+Pr_Name varchar(50),
+Pr_Details text(300),
+Pr_WorkDay date,
+Pr_ReceiveDay date,
+Pr_ArtName varchar(50),
+Pr_Qrcode text,
+Per_Id int,
+Per_Id
+St_Id int
+);
